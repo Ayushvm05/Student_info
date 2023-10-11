@@ -1,0 +1,24 @@
+#include <stdio.h>
+struct student {
+    char name[20];
+    int rollno;
+    
+};
+   void display(struct student t){
+       printf("%s\n",t.name);
+       printf("%d\n",t.rollno);
+   }
+   
+int main() {
+     struct student s1= {"ayush ",20};
+     struct student s2= {"om",10};
+     struct student s3;
+     display (s1);
+     display (s2);
+     printf("Enter the details of student:");
+     scanf("%s %d", &s3.name,&s3.rollno);
+     
+     display (s3);
+    return 0;
+    
+}
